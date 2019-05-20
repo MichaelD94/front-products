@@ -1,12 +1,14 @@
 import React from 'react';
-import "./styles.css"
+import "./styles.css";
+import logo from '../../assets/marca-completa.png';
 
 const Header = () => <header id="main-header">
-<div className="header">
-    <h1>Ivory Store</h1>    
+
+<div className='logo'href='/'>
+     <img src={logo} alt=''></img>
 </div>
 <div className='actions'>
-    <button>login</button>       
+    <button>Login</button>       
 </div>
 </header>;
 

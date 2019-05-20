@@ -22,10 +22,10 @@
 .product-list article a {
     height: 42px;
     border-radius: 5px;
-    border: 2px solid #0000ff;
+    border: 2px solid #2c2cf0;
     background: none;
     margin-top: 10px;
-    color: #0000ff;
+    color: #2c2cf0;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -36,7 +36,7 @@
 }
 
 .product-list article a:hover {
-    background: #0000ff;
+    background: #2c2cf0;
     color: #fff;
 }
 
@@ -50,7 +50,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 0;
-    background: #0000ff;
+    background: #2c2cf0;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -60,7 +60,7 @@
 
 .product-list .actions button:hover{
     background: #fff;
-    color: #0000ff;
+    color: #2c2cf0;
 }
 
 .product-list .actions button[disabled]{
@@ -70,7 +70,7 @@
 
 .product-list .actions button[disabled]:hover{
     opacity: 0.5;
-    background: #0000ff;
+    background: #2c2cf0;
     color: #fff;
 }
 
