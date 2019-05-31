@@ -20,3 +20,42 @@
 .product-info p a {
     color: #069;
 }
+
+.upload {
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+    border: 1px dashed #ddd;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.product-info ul {
+    margin: 30px 0;
+    list-style: none;
+}
+
+.product-info ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.product-info ul li + li{
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.product-info ul li .fileInfo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.product-info ul li .fileInfo strong {
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #333;
+}
