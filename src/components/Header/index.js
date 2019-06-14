@@ -1,5 +1,6 @@
 import React from 'react';
 import "./styles.css";
+import { LinkContainer } from 'react-router-dom';
 import logo from '../../assets/marca-completa.png';
 
 const Header = () => 
@@ -32,7 +33,7 @@ const Header = () =>
                 </div>
                 <div className="col-12 col-md-4">
                     <div className="opt-nav">
-                        <a href="#">
+                        <a href="/login">
                             Login
                         </a>
                     </div>
