@@ -36,7 +36,7 @@ export default class Product extends Component {
 
 
         return(
-            <div className="product-info">
+            <div className="product-info conteudo">
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
                 <p>

@@ -67,7 +67,7 @@ export default class Main extends Component{
             //         </button>
             //     </div>
             // </div>
-            <div className="container">
+            <div className="container conteudo">
                 <div className='row'>
                     {products.map(product => (
                         <div className="col-md-4" key={product._id}>
@@ -78,7 +78,7 @@ export default class Main extends Component{
                                 <div className="card-body">
                                 <h5 className="card-title">{product.title}</h5>
                                 <p className="card-text">{product.description}</p>
-                                <Link className={"btn btn-primary"} to={`/products/${product._id}`}>Acessar</Link>
+                                <Link className={"btn btn-ity"} to={`/products/${product._id}`}>Acessar</Link>
                                 </div>
                             </div>
                         </div>

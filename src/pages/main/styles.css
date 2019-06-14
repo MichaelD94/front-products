@@ -74,7 +74,7 @@
     color: #fff;
 }
 .card-produtos {
-    margin: 10px;
+    margin-bottom: 10px;
 }
 /* [1] The container */
 .img-hover-zoom {
@@ -88,4 +88,14 @@
 .img-hover-zoom:hover img {
     transform: scale(1.3);
 }
-
+.btn-ity {
+    background-color: #45627f;
+    border-color: #45627f;
+    color: #FFF;
+}
+.link-login {
+    color: #e2d5bc;
+}
+.conteudo {
+    margin-top: 11em;
+}
