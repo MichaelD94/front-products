@@ -99,3 +99,13 @@
 .conteudo {
     margin-top: 11em;
 }
+.page-link {
+    color: #45627f !important;
+}
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #45627f;
+}
+.page-none {
+    display: none;
+}

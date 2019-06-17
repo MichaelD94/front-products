@@ -45,8 +45,23 @@ export default class Main extends Component{
         this.loadProducts(pageNumber);
     };
 
+    renderRow= (row) => {
+        const { page } = this.state;
+        return (
+            <li key={row} className={row === page ? 'page-item active' : 'page-item'}>
+                <a onClick={() => this.loadProducts(row)} className="page-link" href="#">{row}</a>
+            </li>
+        );
+    }
+
     render(){
         const { products, page, productInfo } = this.state;
+
+        // Paginação
+        let rows = []
+        for(let i=1; i <= productInfo.pages; i++){
+            rows.push(i)
+        }
 
         return (
             // <div className='product-list'>
@@ -93,7 +108,7 @@ export default class Main extends Component{
                             Próxima
                         </button> */}
 
-                        <nav aria-label="Page navigation example">
+                        <nav aria-label="Page navigation example" className={productInfo.pages === 1 ? 'page-none' : ''}>
                             <ul className="pagination justify-content-center">
                                 <li className={page === 1 ? 'disabled page-item' : 'page-item'}>
                                     <a className="page-link"
@@ -104,9 +119,7 @@ export default class Main extends Component{
                                         Anterior
                                     </a>
                                 </li>
-                                <li className="page-item"><a className="page-link" href="#">1</a></li>
-                                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                                <li className="page-item"><a className="page-link" href="#">3</a></li>
+                                {rows.map(this.renderRow)}
                                 <li className={page === productInfo.pages ? 'disabled page-item' : 'page-item'}>
                                     <a
                                         className="page-link"
