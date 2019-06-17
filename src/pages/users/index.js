@@ -48,10 +48,14 @@ export default class Users extends Component {
     return (
       <div className='users-list'>
         {users.map(user => (
-          <article key={user._id}>
-            <strong>{user.name}</strong>
-            <p>{user.email}</p>
-          </article>
+          <ul>
+            <li key={user._id}>
+              <strong>{user.name}</strong>
+              <p>{user.email}</p>
+              <button>Deletar</button>
+              <button>Editar</button>
+            </li>
+          </ul>
         ))}
         <div className='actions'>
           <button disabled={page === 1} onClick={this.prevPage}>
