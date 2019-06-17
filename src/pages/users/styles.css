@@ -4,7 +4,7 @@
     padding: 0 20px;
 }
 
-.users-list article {
+.users-list ul {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -12,14 +12,14 @@
     margin-bottom: 20px;
 }
 
-.users-list article p {
+.users-list li p {
     font-size: 16px;
     color: #999;
     margin-top: 5px;
     line-height: 24px;    
 }
 
-.users-list article a {
+.users-list li a {
     height: 42px;
     border-radius: 5px;
     border: 2px solid #2c2cf0;
@@ -35,7 +35,25 @@
     transition: all 0.2s;
 }
 
-.users-list article a:hover {
+.users-list li button {      
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #2c2cf0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s;    
+    cursor: pointer;
+}
+
+.users-list li button:hover{
+    background: #fff;
+    color: #2c2cf0;
+}
+
+
+.users-list li a:hover {
     background: #2c2cf0;
     color: #fff;
 }
