@@ -91,3 +91,30 @@
     background: #2c2cf0;
     color: #fff;
 }
+.nome-usuario {
+    color: #45627f;
+}
+.lista-usuarios li:hover {
+    background-color: #efede9;
+}
+.badge-ivry {
+    background-color: #45627f;
+    color: #FFF;
+}
+.page-link {
+    color: #45627f !important;
+}
+.page-item.active .page-link {
+    color: #fff !important;
+    background-color: #45627f;
+    border-color: #45627f;
+}
+.page-item.disabled .page-link {
+    color: #6c757d !important;
+}
+.page-none {
+    display: none;
+}
+.paginacao nav {
+    margin-top: 5px; 
+}
