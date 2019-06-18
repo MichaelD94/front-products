@@ -50,4 +50,9 @@ header .logo img{
 }
 .opt-nav a:hover {
     text-decoration: none;
+    color: #e2d5bc !important;
+}
+.btn:hover {
+    text-decoration: none;
+    color: #e2d5bc !important;
 }
