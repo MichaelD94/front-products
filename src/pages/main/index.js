@@ -83,6 +83,26 @@ export default class Main extends Component{
             //     </div>
             // </div>
             <div className="container conteudo">
+                <div className="row filtros">
+                    <div className="col-12">
+                        <h4>Filtros Busca App:</h4>
+                    </div>
+                    <div className="col-sm-6">
+                        <div className="form-group has-search">
+                            <span className="fa fa-search form-control-feedback"></span>
+                            <input type="text" className="form-control" placeholder="Busca por nome do cliente"/>
+                        </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <div className="form-group has-search">
+                            <span className="fa fa-search form-control-feedback"></span>
+                            <input type="text" className="form-control" placeholder="busca por nome do app"/>
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <button className="btn btn-ity">Buscar</button>
+                    </div>
+                </div>
                 <div className='row'>
                     {products.map(product => (
                         <div className="col-md-4" key={product._id}>

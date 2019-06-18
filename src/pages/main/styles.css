@@ -97,7 +97,12 @@
     color: #e2d5bc;
 }
 .conteudo {
-    margin-top: 11em;
+    margin-top: 8em;
+}
+@media screen and (max-width: 767px) {
+    .conteudo {
+        margin-top: 11em;
+    }
 }
 .page-link {
     color: #45627f !important;
@@ -112,4 +117,14 @@
 }
 .page-none {
     display: none;
+}
+.filtros {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px #dad8d4 solid;
+}
+.filtros h4 {
+    color: #45627f;
+    font-weight: bold;
 }

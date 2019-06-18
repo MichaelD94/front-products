@@ -1,5 +1,5 @@
 .conteudo {
-    margin-top: 14em;
+    margin-top: 12em;
 }
 
 /* background-color:#f1f1f1 */
@@ -52,7 +52,7 @@ span.psw {
 
 @media screen and (max-width: 767px) {
     .conteudo {
-        margin-top: 15em;
+        margin-top: 15.5em;
     }
 }
 

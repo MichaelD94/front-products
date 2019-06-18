@@ -60,5 +60,14 @@
     color: #333;
 }
 .conteudo {
-    margin-top: 11em;
+    margin-top: 8em;
+}
+@media screen and (max-width: 767px) {
+    .conteudo {
+        margin-top: 11em;
+    }
+}
+.product-info h1 {
+    color: #45627f;
+    font-weight: bold;
 }
