@@ -128,3 +128,8 @@
     color: #45627f;
     font-weight: bold;
 }
+.btn:hover {
+    text-decoration: none;
+    color: #e2d5bc !important;
+    opacity: 0.8;
+}

@@ -145,3 +145,13 @@
     border: 3px solid #f1f1f1;
     padding: .5em;
 }
+.btn:hover {
+    text-decoration: none;
+    color: #e2d5bc !important;
+    opacity: 0.8;
+}
+.btn-sm:hover {
+    text-decoration: none;
+    color: #e2d5bc !important;
+    opacity: 0.8;
+}

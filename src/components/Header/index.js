@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles.css";
 import { LinkContainer } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/marca-completa.png';
 
 const Header = () => 
@@ -22,26 +23,20 @@ const Header = () =>
                         <a href="http://www.ivoryit.com.br/">
                             Site
                         </a>
-                        <a href="/users">
-                            Usuários
-                        </a>
+                        <Link to={'/users'}>Usuários</Link>
                     </div>
                 </div>
                 <div className="col-12 col-md-4 text-center">
                     <h1>
-                        <a href="#" className="link-img">
+                        <Link to={'/'} className="link-img">
                             <img src={logo} alt=''/>
-                        </a>
+                        </Link>
                     </h1>
                 </div>
                 <div className="col-12 col-md-4">
                     <div className="opt-nav">
-                        <a href="/login">
-                            Login
-                        </a>
-                        <a href="/user/cadastro">
-                            Cadastro
-                        </a>
+                        <Link to={'/login'}>Login</Link>
+                        <Link to={'/user/cadastro'}>Cadastro</Link>
                     </div>
                 </div>
             </div>
