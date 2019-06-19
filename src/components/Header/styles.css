@@ -45,12 +45,14 @@ header .logo img{
 }
 .opt-nav a {
     color: #45627f !important;
+    margin-right: 15px;
     font-size: 1.2em !important;
     font-weight: bold;
 }
 .opt-nav a:hover {
     text-decoration: none;
-    color: #e2d5bc !important;
+    color: #45627f !important;
+    border-bottom: 2px #45627f solid;
 }
 .btn:hover {
     text-decoration: none;

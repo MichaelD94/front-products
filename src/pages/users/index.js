@@ -83,17 +83,32 @@ export default class Users extends Component {
       // </div>
       <div className="container conteudo">
         <div className="row">
-          <div className="col-12 offset-md-2 col-md-8">
-            <h6 className="text-muted">Usuários</h6> 
+          <div className="col-12">
+            <h6 className="texto-usuarios">Usuários</h6> 
+            <a href="/user/cadastro" className="btn btn-ivry btn-novo-usuario">Novo</a>
             <ul className="list-group lista-usuarios">
               {users.map(user => (
-                <li key={user._id} className="list-group-item d-flex justify-content-between align-items-center">
-                  <span className="nome-usuario">{user.name}</span>
-                  <span className="badge badge-ivry badge-pill">Editar</span>
-                  <span className="badge badge-danger badge-pill">Excluir</span>
+                <li key={user._id} className="list-group-item">
+                  <div className="row">
+                    <div className="col-6 col-md-8"><p className="linha-lista-user">{user.name}</p></div>
+                    <div className="col-3 col-md-2">
+                      <a className="btn-sm btn-ivry" href="#">Editar</a>
+                    </div>
+                    <div className="col-3 col-md-2">
+                      <a className="btn-sm btn-danger" href="#">Excluir</a></div>
+                  </div>
                 </li>
               ))}
             </ul>
+            {/* <ul className="list-group lista-usuarios">
+              {users.map(user => (
+                <li key={user._id} className="list-group-item d-flex justify-content-between align-items-center">
+                  <span className="nome-usuario">{user.name}</span>
+                  <span className="badge badge-ivry badge-pill"> Editar</span>
+                  <span className="badge badge-danger badge-pill">Excluir</span>
+                </li>
+              ))}
+            </ul> */}
           </div>
         </div>
         <div className="row">

@@ -118,3 +118,30 @@
 .paginacao nav {
     margin-top: 5px; 
 }
+.btn-ivry {
+    background-color: #45627f;
+    color: #FFF;
+}
+.btn-sm:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+.btn-novo-usuario {
+    width: 7em;
+    height: auto;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.texto-usuarios {
+    color: #45627f;
+    font-weight: bold;
+}
+
+.linha-lista-user {
+    color: #45627f;
+    margin: 0;
+}
+.form-user {
+    border: 3px solid #f1f1f1;
+    padding: .5em;
+}

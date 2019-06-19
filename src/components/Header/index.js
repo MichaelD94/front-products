@@ -22,6 +22,9 @@ const Header = () =>
                         <a href="http://www.ivoryit.com.br/">
                             Site
                         </a>
+                        <a href="/users">
+                            Usuários
+                        </a>
                     </div>
                 </div>
                 <div className="col-12 col-md-4 text-center">
@@ -35,6 +38,9 @@ const Header = () =>
                     <div className="opt-nav">
                         <a href="/login">
                             Login
+                        </a>
+                        <a href="/user/cadastro">
+                            Cadastro
                         </a>
                     </div>
                 </div>
