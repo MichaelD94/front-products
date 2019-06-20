@@ -21,11 +21,23 @@ export default class FormUser extends Component {
     // }
 
     
-    componentDidMount() {
+    async componentDidMount() {
         // buscar dados do usuário
-        if (this.props.id !== undefined && this.props.id !== '') {
-            
-
+        const id = this.props.id;
+        
+        if (id !== undefined && id !== '') {
+            api.get(`/users/${id.id}`)
+                .then(response => {
+                    let user = this.state.user;
+                    user.name = response.data.name;
+                    user.email = response.data.email;
+                    this.setState({
+                        user
+                    })
+                })
+                .catch(error => {
+                    console.log(error);
+                })
         }
     }
 
@@ -33,7 +45,8 @@ export default class FormUser extends Component {
     // verifica se é edição ou novo user
     saveUser = (event) => {
         event.preventDefault();
-        if (this.props.id !== undefined && this.props.id !== '') {
+        const { id } = this.props;
+        if (id !== undefined && id !== '') {
             this.editUser(this.state.user);
         } else {
             this.createUser(this.state.user);
@@ -56,7 +69,8 @@ export default class FormUser extends Component {
     };
 
     editUser = async (user) => {
-        await api.put(`/users${this.props.id}`, user)
+        const { id } = this.props;
+        await api.put(`/users/${id.id}`, user)
         .then(() => {
             // ir para pagina de usuários
         })
@@ -103,7 +117,6 @@ export default class FormUser extends Component {
                                 value={this.state.user.name}
                                 onChange={this.handleInputChange}/>
                             <input
-                                required
                                 id="password"
                                 name="password"
                                 type="password"
