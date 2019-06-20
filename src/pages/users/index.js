@@ -63,42 +63,22 @@ export default class Users extends Component {
     }
 
     return (
-      // <div className='users-list'>
-      //   {users.map(user => (
-      //     <ul>
-      //       <li key={user._id}>
-      //         <strong>{user.name}</strong>
-      //         <p>{user.email}</p>
-      //         <button>Deletar</button>
-      //         <button>Editar</button>
-      //       </li>
-      //     </ul>
-      //   ))}
-      //   <div className='actions'>
-      //     <button disabled={page === 1} onClick={this.prevPage}>
-      //       Anterior
-      //           </button>
-      //     <button disabled={page === usersInfo.pages} onClick={this.nextPage}>
-      //       Próxima
-      //           </button>
-      //   </div>
-      // </div>
       <div>
         <Header/>
-      
         <div className="container conteudo">
           <div className="row">
             <div className="col-12">
-              <h6 className="texto-usuarios">Usuários</h6>
-              <Link to={'/user/cadastro'} className="btn btn-ivry btn-novo-usuario">Novo</Link>
-              {/* <a href="/user/cadastro" className="btn btn-ivry btn-novo-usuario">Novo</a> */}
+              <h4 className="texto-usuarios">Usuários</h4>
+              <Link to={'/user/register'} className="btn btn-ivry btn-novo-usuario">Novo</Link>
+              {/* <a href="/user/register" className="btn btn-ivry btn-novo-usuario">Novo</a> */}
               <ul className="list-group lista-usuarios">
                 {users.map(user => (
                   <li key={user._id} className="list-group-item">
                     <div className="row">
                       <div className="col-6 col-md-8"><p className="linha-lista-user">{user.name}</p></div>
                       <div className="col-3 col-md-2">
-                        <a className="btn-sm btn-ivry" href="#">Editar</a>
+                        <Link to={`/user/edit/${user._id}`} className="btn-sm btn-ivry">Editar</Link>
+                        {/* <a className="btn-sm btn-ivry" href="#">Editar</a> */}
                       </div>
                       <div className="col-3 col-md-2">
                         <a className="btn-sm btn-danger" href="#">Excluir</a></div>
@@ -106,15 +86,6 @@ export default class Users extends Component {
                   </li>
                 ))}
               </ul>
-              {/* <ul className="list-group lista-usuarios">
-                {users.map(user => (
-                  <li key={user._id} className="list-group-item d-flex justify-content-between align-items-center">
-                    <span className="nome-usuario">{user.name}</span>
-                    <span className="badge badge-ivry badge-pill"> Editar</span>
-                    <span className="badge badge-danger badge-pill">Excluir</span>
-                  </li>
-                ))}
-              </ul> */}
             </div>
           </div>
           <div className="row">

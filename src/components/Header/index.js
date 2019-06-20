@@ -18,7 +18,7 @@ const Header = () =>
     <header id="main-header">
         <div className="container">
             <div className="row">
-                <div className="col-12 col-md-4">
+                <div className="link-header col-12 col-md-4">
                     <div className="opt-nav">
                         <a href="http://www.ivoryit.com.br/">
                             Site
@@ -33,10 +33,10 @@ const Header = () =>
                         </Link>
                     </h1>
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="link-header col-12 col-md-4">
                     <div className="opt-nav">
                         <Link to={'/login'}>Login</Link>
-                        <Link to={'/user/cadastro'}>Cadastro</Link>
+                        <Link to={'/user/register'}>Cadastro</Link>
                     </div>
                 </div>
             </div>

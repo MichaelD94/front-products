@@ -58,3 +58,7 @@ header .logo img{
     text-decoration: none;
     color: #e2d5bc !important;
 }
+
+.link-header {
+    text-align: center;
+}
