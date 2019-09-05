@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles.css";
 import { LinkContainer } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/marca-completa.png';
+import logo from '../../assets/logo.svg';
 
 const Header = () => 
     // <header id="main-header">
@@ -20,7 +20,7 @@ const Header = () =>
             <div className="row">
                 <div className="link-header col-12 col-md-4">
                     <div className="opt-nav">
-                        <a href="http://www.ivoryit.com.br/">
+                        <a href="google.com">
                             Site
                         </a>
                         <Link to={'/users'}>Usuários</Link>
@@ -29,7 +29,7 @@ const Header = () =>
                 <div className="col-12 col-md-4 text-center">
                     <h1>
                         <Link to={'/'} className="link-img">
-                            <img src={logo} alt=''/>
+                            <img className="logo" src={logo} alt=''/>
                         </Link>
                     </h1>
                 </div>
